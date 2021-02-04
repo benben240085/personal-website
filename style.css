@@ -369,7 +369,7 @@ img {
 
 .hobby-header {
     margin: 0 auto 6rem auto;
-    padding-top: 150px;
+    padding-top: 5%;
     border-bottom: 2px solid #FFF;
     margin-bottom: auto;
 }
@@ -377,30 +377,24 @@ img {
 .animations {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 50vh;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .basketball-flex {
-    display: inline-flex;
-    flex-direction: column;
     align-items: center;
-    padding-bottom: 25%;
+    justify-content: center;
 }
 
 .music-flex {
-    display: inline-flex;
-    flex-direction: column;
     align-items: center;
-    padding-bottom: 0%;
+    justify-content: center;
 }
 
 .surf-flex {
-    display: inline-flex;
-    flex-direction: column;
     align-items: center;
-    padding-bottom: 0%;
+    justify-content: center;
 }
 
 .basketball-title, .music-title, .surf-title {
@@ -410,8 +404,16 @@ img {
     transition: opacity 1s ease-in;
 }
 
+.basketball-title {
+    margin-left: 100px;
+}
+
 .music-title {
-    margin-left: 40px;
+    margin-left: 60px;
+}
+
+.surf-title {
+    margin-left: 200px;
 }
 
 .basketball-flex:hover > .basketball-title {
@@ -427,127 +429,6 @@ img {
 .surf-flex:hover > .surf-title {
     opacity: 1;
     transition: opacity 1s ease-in;
-}
-
-#player-body {
-    animation: body 5s infinite linear;
-}
-
-#basketball {
-    animation: body 5s infinite linear;
-}
-
-#player-shadow {
-    animation: body 5s infinite linear;
-}
-
-@keyframes body {
-    0% {
-        transform: translate3d(0px, 0px, 0px);
-    }
-    100% {
-        transform: translate3d(-70px, -15px, 0px);
-    }
-}
-
-#face, #headphones, #body, #arms {
-    animation: face 2s infinite linear;
-}
-
-@keyframes face {
-    0% {
-        transform: translate3d(0px, 0px, 0px);
-    }
-    50% {
-        transform: translate3d(0px, 10px, 0px);
-    }
-    100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
-}
-
-#right-leg {
-    animation: right 2s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-#left-leg {
-    animation: left 2s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-#surfboard {
-    animation: board 2s infinite linear;
-}
-
-#surfer-body, #arm {
-    animation: surf-body 2s infinite linear;
-}
-
-#ripples {
-    animation: ripple 2s infinite linear;
-}
-
-@keyframes ripple {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes surf-body {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes board {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes right {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    50% {
-        transform: rotateZ(25deg);
-    }
-    100% {
-        transform: rotateZ(0deg);
-    }
-}
-
-@keyframes left {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    50% {
-        transform: rotateZ(-8deg);
-    }
-    100% {
-        transform: rotateZ(0deg);
-    }
 }
 
 .contact-section {
